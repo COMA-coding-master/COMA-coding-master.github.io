@@ -44,10 +44,14 @@ rvm reinstall —force
 gem install bundler rdoc jekyll
 ```
 
-### 4. Jekyll Server 실행
-현재 로컬소스의 블로그 화면을 livereload로 확인 가능
+### 4. Jekyll bundle 생성 (최초 1회 실행)
 ```
 bundle install
+```
+
+### 5. Jekyll 서버 기동 (livereload)
+내용 업데이트 감지 시마다 live reload
+```
 bundle exec jekyll serve --livereload
 ```
 
