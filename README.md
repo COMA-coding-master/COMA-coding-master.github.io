@@ -48,13 +48,11 @@ gem install bundler rdoc jekyll
 ```
 bundle install
 ```
-
 ### 5. Jekyll 서버 기동 (livereload)
 내용 업데이트 감지 시마다 live reload
 ```
 bundle exec jekyll serve --livereload
 ```
-
 ## 컨벤션 규칙
 1. 업로드할 포스트 경로는 _posts 하위 폴더에 작업
 2. 게시글 파일 네이밍 규칙
