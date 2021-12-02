@@ -29,13 +29,13 @@ title: "Coding Master"
 email: jinah0818@gmail.com
 description: "알고리즘을 더 잘하고 싶은 사람들"
 github:
-  username: jinah92
+  username: COMA-coding-master
 swiftype:
   searchId: iXZyPokVfxFaBTvi64Y6
 comment:
-    repo: blog
-    client_id: a6fb73b3e790e234bab8
-    client_secret: cc10aaff53a03d05ab2ee002dbf401dd7627c7a3
+    repo: COMA-coding-master.github.io
+    client_id: 12e561de47d1c907f757
+    client_secret: 58cba64a7ef64bdc7f11bfe5cf79463dfd9fc3a6
 
 url: "https://coma-coding-master.github.io"
 imgrepo: "https://coma-coding-master.github.io/static/img"

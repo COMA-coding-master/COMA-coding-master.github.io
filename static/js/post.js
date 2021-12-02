@@ -29,6 +29,9 @@ function share(){
 
 
 function renderComment() {
+    console.log(window.location.pathname)
+    console.log('{{site.github.username}}')
+    console.log('{{site.comment.repo}}')
     var gittalk = new Gitalk({
         id: window.location.pathname,
         clientID: '{{site.comment.client_id}}',
