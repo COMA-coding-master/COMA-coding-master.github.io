@@ -30,7 +30,7 @@ rvm use ruby-2.6.6
 rvm --default use 2.6.6
 ```
 
-### 3. [Jekyll][1] 설치
+### 3. [Jekyll](https://jekyllrb.com/?target=_blank) 설치
 #### (1) zlib 패키지 설치
 ```
 rvm pkg install zlib
@@ -55,7 +55,7 @@ bundle exec jekyll serve --livereload
 ```
 
 ## 스터디 규칙
-1. 문제 풀이 사이트는 [프로그래머스](https://programmers.co.kr/){:target="_blank"}로 한다 (미정)
+1. 문제 풀이 사이트는 [프로그래머스](https://programmers.co.kr/?target=_blank)로 한다 (미정)
 2. 매주 일요일 11시 59분까지 3문제 이상의 문제 풀이를 수행하여 포스트 업로드한다
 3. 풀이하고자 하는 문제 유형(또는 문제이름)은 매주 월요일 11시 59분까지 스터디방에 공유하거나 github issue 를 새로 생성한다
  
@@ -68,8 +68,3 @@ bundle exec jekyll serve --livereload
         1. 상단에 **_title_**, **_tags_**, **_categories_**, **_author_** 명시 (샘플파일 참고)
         2. toc은 **_문제이름 및 사이트명 (링크 포함)_**, **_문제 개요_**, **_제약사항(있는 경우)_**, **_풀이내용(code block)_** 으로 구분
     - categroies는 문제유형을 반드시 영문으로 작성 (한글 작성시, 필터링 안됨)
-
-
-
-
-[1]: https://jekyllrb.com/
