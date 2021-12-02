@@ -1,53 +1,48 @@
-# Configurations
-title:            Jekyll Gitbook
-longtitle:        Jekyll Gitbook
-author:           HE Tao
-email:            sighingnow@gmail.com
-description: >
-  Build Jekyll site with the GitBook style.
+plugins: [jekyll-paginate]
 
-version:          1.0
-gitbook_version:  3.2.3
+permalink: /:categories/:title/
 
-url:              'https://sighingnow.github.io'
-rss:              RSS
-
-toc:
-  enabled: true
-  h_min: 1
-  h_max: 3
-
-# Search settings
-tipue_search:
-  include:
-    pages: true
-  exclude:
-    files: [index.md, search.html]
-
-# markdown render engine.
-markdown:         kramdown
+highlighter: rouge
+markdown: kramdown
 kramdown:
-  auto_ids:               true
-  input:                  GFM
-  math_engine:            mathjax
-  smart_quotes:           lsquo,rsquo,ldquo,rdquo
-  toc_levels:             1..6
-  syntax_highlighter:     rouge
-  syntax_highlighter_opts:
-    guess_lang:           true
+  input:  GFM
+  syntax_highlighter: rouge
 
-markdown_ext:     markdown,mkdown,mkdn,mkd,md
 
-# Permalinks
-permalink:        /:categories/:year-:month-:day-:title:output_ext
+paginate: 10
+paginate_path: "page/:num"
+baseurl: "/blog"
 
-exclude:
-  - _drafts
 
-destination:      ./_site
-incremental:      false
-regenerate:       true
 
-plugins:
-  - jekyll-feed
-  - jemoji
+defaults:
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      styles : [highlight.css,post.css]
+      scripts : [post.js]
+
+
+
+title: "Coding Master"
+email: jinah0818@gmail.com
+description: "알고리즘을 더 잘하고 싶은 사람들"
+github:
+  username: jinah92
+swiftype:
+  searchId: iXZyPokVfxFaBTvi64Y6
+comment:
+    repo: blog
+    client_id: a6fb73b3e790e234bab8
+    client_secret: cc10aaff53a03d05ab2ee002dbf401dd7627c7a3
+
+url: "https://coma-coding-master.github.io/blog"
+imgrepo: "https://coma-coding-master.github.io/blog/static/img"
+
+
+#url: "http://127.0.0.1:4000"
+#imgrepo: "http://127.0.0.1:4000/static/img"
+

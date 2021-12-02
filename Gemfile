@@ -7,5 +7,7 @@ gem "jekyll"
 gem 'jekyll-feed'
 gem 'jemoji'
 gem 'webrick'
+gem "jekyll-paginate"
+gem "jekyll-seo-tag"
 
 # gem "rails"
