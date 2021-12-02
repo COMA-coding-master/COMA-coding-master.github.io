@@ -11,8 +11,6 @@ kramdown:
 
 paginate: 10
 paginate_path: "page/:num"
-baseurl: "/blog"
-
 
 
 defaults:
