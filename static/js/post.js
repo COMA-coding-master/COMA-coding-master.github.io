@@ -44,7 +44,7 @@ function renderComment() {
         clientSecret: '{{site.comment.client_secret}}',
         owner: '{{site.github.username}}',
         repo: '{{site.comment.repo}}',
-        admin: '{{site.github.username}}',
+        admin: '{{site.github.admin}}',
         perPage: 20,
         distractionFreeMode: false,
         createIssueManually: true,
