@@ -31,12 +31,6 @@ function share(){
 function renderComment() {
     const data = window.location.pathname.split('/')
     console.log(decodeURI(data[2]))
-    console.log(document)
-    console.log('{{site.comment.client_secret}}')
-    console.log('{{site.github.owner}}')
-    console.log('{{site.comment.repo}}')
-    console.log('{{site.github.username}}')
-    console.log('{{site.github.admin}}'.split(' '))
 
     var gittalk = new Gitalk({
         id: decodeURI(data[2]),
@@ -48,7 +42,6 @@ function renderComment() {
         perPage: 20,
         distractionFreeMode: false,
         createIssueManually: true,
-        title: document.title
     });
 
     gittalk.render('post-comment')
