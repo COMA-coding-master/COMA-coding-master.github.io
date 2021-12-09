@@ -29,19 +29,28 @@ function share(){
 
 
 function renderComment() {
-    console.log(window.location.pathname)
-    console.log('{{site.github.username}}')
+    const data = window.location.pathname.split('/')
+    console.log(decodeURI(data[2]))
+    console.log(document)
+    console.log('{{site.comment.client_secret}}')
+    console.log('{{site.github.owner}}')
     console.log('{{site.comment.repo}}')
+    console.log('{{site.github.username}}')
+    console.log('{{site.github.admin}}'.split(' '))
+
     var gittalk = new Gitalk({
-        id: window.location.pathname,
+        id: decodeURI(data[2]),
         clientID: '{{site.comment.client_id}}',
         clientSecret: '{{site.comment.client_secret}}',
         owner: '{{site.github.username}}',
         repo: '{{site.comment.repo}}',
-        admin: ['{{site.github.username}}'],
+        admin: '{{site.github.username}}',
         perPage: 20,
-        distractionFreeMode: false
+        distractionFreeMode: false,
+        createIssueManually: true,
+        title: document.title
     });
+
     gittalk.render('post-comment')
     $("#post-comment").removeClass('hidden');
 }
