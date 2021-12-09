@@ -4,6 +4,9 @@ to ba a coding master
 
 join your self!
 
+## Blog
+[https://coma-coding-master.github.io/](https://coma-coding-master.github.io/)
+
 ## Setup
 ### 1. git clone
 ```
