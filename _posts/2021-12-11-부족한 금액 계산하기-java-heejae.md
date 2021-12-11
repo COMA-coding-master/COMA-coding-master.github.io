@@ -16,6 +16,7 @@ author: Heejae Han
 ``` java
 class Solution {
     public long solution(int price, int money, int count) {
+        
         long answer = -1;
         long sum = 0;
 
@@ -25,6 +26,10 @@ class Solution {
 
         answer = sum - money;
 
+        // 금액이 부족하지 않을 경우 
+        if(answer < 0){
+            answer = 0;
+        }
 
         return answer;
     }
