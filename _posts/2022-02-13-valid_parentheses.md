@@ -1,6 +1,6 @@
 ---
 title: Valid Parentheses
-categories: Top100
+categories: LeetCode-Top100
 tag: easy
 ---
 

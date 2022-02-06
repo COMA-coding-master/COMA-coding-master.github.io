@@ -1,6 +1,6 @@
 ---
 title: Merge Two Sorted Lists
-categories: Top100
+categories: LeetCode-Top100
 tag: easy
 ---
 
