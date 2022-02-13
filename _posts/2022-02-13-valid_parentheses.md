@@ -9,6 +9,28 @@ tag: easy
 
 ### [문제 링크](https://leetcode.com/problems/valid-parentheses/)
 
+### python
+
+#### sjw96007
+
+```python
+class Solution(object):
+    def isValid(self, s):
+        """
+        :type s: str
+        :rtype: bool
+        """
+        answer = False
+        while s:
+            chk = len(s)
+            s = s.replace('()', '').replace('{}', '').replace('[]', '')
+            if chk == len(s):
+                break
+        if len(s) == 0:
+            answer = True
+        return answer
+```
+
 ### javascript
 
 #### jinah92
