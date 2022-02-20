@@ -31,6 +31,30 @@ class Solution(object):
         return answer
 ```
 
+### java
+
+#### l1l1l1l1l1l1l1
+
+```java
+class Solution {
+    public boolean isValid(String s) {
+        Map<Character, Character> map = Map.of(')', '(', '}', '{', ']', '[');
+        Stack<Character> stack = new Stack<>();
+
+        for (int i = 0; i < s.length(); i++){
+            char c = s.charAt(i);
+            if (c == '(' || c == '{' || c == '[') {
+                stack.push(c);
+            } else if (stack.isEmpty() || stack.pop() != map.get(c)) {
+                return false;
+            }
+        }
+
+        return stack.isEmpty();
+    }
+}
+```
+
 ### javascript
 
 #### jinah92
