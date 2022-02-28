@@ -9,6 +9,26 @@ tag: easy
 
 ### [문제 링크](https://leetcode.com/problems/maximum-subarray/)
 
+### java
+
+#### l1l1l1l1l1l1l1
+
+```java
+class Solution {
+    public int maxSubArray(int[] nums) {
+        int sum = nums[0];
+
+        for (int i = 1; i < nums.length; i++) {
+            nums[i] = Math.max(nums[i], nums[i] + nums[i - 1]);
+            sum = Math.max(sum, nums[i]);
+        }
+
+        return sum;
+    }
+}
+```
+
+
 ### javascript
 
 #### jinah92
