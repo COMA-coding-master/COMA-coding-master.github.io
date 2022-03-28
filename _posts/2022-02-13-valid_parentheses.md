@@ -55,6 +55,33 @@ class Solution {
 }
 ```
 
+#### study-jay
+
+```java
+class Solution {
+    public boolean isValid(String s) {
+        boolean answer = false;
+        Stack<Character> stack = new Stack<>();
+
+        for (char c : s.toCharArray()) {
+            if(stack.empty()){
+                stack.add(c);
+            } else {
+                char peek = stack.peek();
+                if(peek == '[' && c == ']' || peek == '(' && c == ')' || peek == '{' && c == '}'){
+                    stack.pop();
+                } else {
+                    stack.add(c);
+                }
+            }
+        }
+        if(stack.empty()) answer = true;
+
+        return answer;
+    }
+}
+```
+
 ### javascript
 
 #### jinah92
